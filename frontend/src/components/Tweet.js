@@ -18,7 +18,7 @@ function Tweet() {
         <section>
             
             <div class="container-fluid">
-                <h1 class="mt-5">Tweets</h1>
+                <h1 class="mt-5">Products</h1>
                 <form method="POST" action="/addTweet">
                     <div class="input-group justify-content-center">
                         <div class="input-group-prepend">
@@ -32,7 +32,7 @@ function Tweet() {
                 items.map(item => (
                     <div class="row padding">
                         <div class="alert alert-info rounded-pill" role="alert">
-                            <i class="fa fa-user mr-2"></i> <i>{item.fullname} ({item.username}): {item.tweet}</i>
+                            <i class="fa fa-user mr-2"></i> <i>{item.Name} ({item.Quantity}): {item.Description}</i>
                         </div>
                     </div>       
                 ))

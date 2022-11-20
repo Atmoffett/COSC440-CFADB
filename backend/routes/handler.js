@@ -28,6 +28,8 @@ router.post('/addTweet', async (req, res) => {
         if (err) throw err;
 
         const qry = `INSERT INTO tweets(tweet, user_id) VALUES(?,?)`;
+
+       // const qry = 'SELECT * FROM products'
         conn.query(qry, [userTweet, userId], (err, result) => {
             conn.release();
             if (err) throw err;
@@ -37,6 +39,25 @@ router.post('/addTweet', async (req, res) => {
         res.redirect('/tweets');
         res.end();
     });
+});
+
+router.get('/products', async (req, res) => {
+    pool.getConnection((err, conn) => {
+        if (err) throw err;
+        try {
+            const qry = 'SELECT * FROM Products'
+            conn.query(qry, (err, result) => {
+                conn.release();
+                if (err) throw err;
+                res.send(JSON.stringify(result));
+            });
+        } catch (err) {
+            console.log(err);
+            res.end();
+        }
+
+    });
+
 });
 
 module.exports = router;
