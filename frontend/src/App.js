@@ -2,36 +2,38 @@
 import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
-import Tweet from './components/Tweet';
 import Products from './components/Products';
+import Employee from './components/Employee';
+import Department from './components/Department';
+import Account from './components/Account';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //TODO
-//import Account from './components/Products';
+//i
 //<Route path='/account" exact component={account} />
-//import Department from './components/Products';
-//<Route path='/department" exact component={Department} />
-//import Employee from './components/Products';
-//<Route path='/employee" exact component={Employee} />
-//import Order from './components/Products';
+//
+//
+//import Order from './components/Orders';
 //<Route path='/order" exact component={Order} />
-//import Sales from './components/Products';
+//import Sales from './components/Sales';
 //<Route path='/sales" exact component={Sales} />
 
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-          <Nav />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/tweets" exact component={Tweet} />
-            <Route path="/products" exact component={Products} />
-          </Switch>
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Nav />
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/products" exact component={Products} />
+                    <Route path="/employee" exact component={Employee} />
+                    <Route path="/department" exact component={Department} />
+                    <Route path="/account" exact component={Account} />
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
