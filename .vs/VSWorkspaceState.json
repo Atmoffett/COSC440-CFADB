@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\frontend",
+    "\\frontend\\src",
+    "\\frontend\\src\\components"
   ],
-  "SelectedNode": "\\C:\\Users\\amoff\\Source\\Repos\\COSC450\\newRepo",
+  "SelectedNode": "\\frontend\\src\\components\\Table.js",
   "PreviewInSolutionExplorer": false
 }
