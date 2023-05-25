@@ -1,7 +1,7 @@
 # Using MySQL with Node and React JS
 Final
 
-# Simulated Inventory mangement system for Chick-fil-a
+# Simulated Inventory mangement system for a fast food website.
 
 First, ensure the DB is accessible via XAMPP or similar,
 
